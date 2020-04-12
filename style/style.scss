@@ -70,6 +70,7 @@ $light-grayish-blue: hsl(207, 33%, 95%);
       width: 45%;
 
       .dot {
+        list-style: none;
         background-color: $grayish-blue;
         width: 5px;
         height: 5px;
@@ -214,6 +215,7 @@ $light-grayish-blue: hsl(207, 33%, 95%);
       }
 
       .line {
+        list-style: none;
         border-top: 1px solid rgba($color: $grayish-blue, $alpha: 0.3);
       }
 

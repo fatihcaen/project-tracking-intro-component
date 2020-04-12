@@ -51,6 +51,7 @@
     width: 45%;
   }
   .navbar .nav-items .dot {
+    list-style: none;
     background-color: #a0a1ac;
     width: 5px;
     height: 5px;
@@ -177,6 +178,7 @@
     display: none;
   }
   .navbar .nav-items .line {
+    list-style: none;
     border-top: 1px solid rgba(160, 161, 172, 0.3);
   }
   .navbar .nav-items .nav-item {
