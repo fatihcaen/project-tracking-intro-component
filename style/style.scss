@@ -1,0 +1,327 @@
+// Fonts
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+
+$headings: "Barlow Condensed", sans-serif;
+$body-font: "Barlow", sans-serif;
+
+// Colors
+
+$white: #fff;
+$red: hsl(0, 100%, 68%);
+$very-dark-blue: hsl(230, 29%, 20%);
+$dark-grayish-blue: hsl(230, 11%, 40%);
+$grayish-blue: hsl(231, 7%, 65%);
+$light-grayish-blue: hsl(207, 33%, 95%);
+
+// Navbar
+
+.nav-item {
+  font-family: $headings;
+  font-weight: 700;
+  list-style: none;
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+}
+
+.nav-item.login {
+  color: $grayish-blue;
+}
+
+.bgPattern {
+  position: absolute;
+  background-color: $light-grayish-blue;
+  width: 50%;
+  height: 50%;
+  right: 0;
+  border-bottom-left-radius: 50px;
+}
+
+.attribution {
+  margin-top: 40px;
+  justify-content: center;
+  font-family: $headings;
+  font-size: 20px;
+  a {
+    font-weight: 700;
+    color: $red;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    padding: 50px 100px;
+    .navbar-brand {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .nav-items {
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+      justify-content: space-around;
+      width: 45%;
+
+      .dot {
+        background-color: $grayish-blue;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+      }
+
+      .line {
+        display: none;
+      }
+    }
+  }
+
+  // Main
+
+  .illustration {
+    overflow: hidden;
+    order: 2;
+    img {
+      width: 120%;
+      height: auto;
+    }
+  }
+
+  .offer {
+    order: 1;
+    margin-top: 20px;
+    padding-left: 100px;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+
+    .small-title {
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+      font-family: $headings;
+      margin-bottom: 15px;
+
+      h6 {
+        margin: 0;
+        font-weight: 400;
+        letter-spacing: 3.5px;
+        color: $grayish-blue;
+      }
+
+      .badge {
+        font-size: 15px;
+        border-radius: 15px;
+        padding: 5px 10px;
+        color: $white;
+        background-color: $very-dark-blue;
+        margin-right: 15px;
+      }
+    }
+
+    .big-title {
+      h1 {
+        margin: 0;
+        font-family: $headings;
+        font-weight: 700;
+        color: $very-dark-blue;
+        font-size: 50px;
+        margin-bottom: 15px;
+        width: 65%;
+      }
+    }
+
+    .text {
+      p {
+        margin: 0;
+        font-family: $body-font;
+        color: $dark-grayish-blue;
+        font-size: 15px;
+        width: 40%;
+      }
+    }
+
+    .buttons {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-flow: row;
+      justify-content: flex-start;
+      align-items: center;
+
+      .schedule {
+        background-color: $red;
+        padding: 10px 25px;
+        border: none;
+        border-radius: 5px;
+        font-family: $headings;
+        font-weight: 700;
+        color: $white;
+        font-size: 14px;
+        letter-spacing: 1.3px;
+        margin-right: 15px;
+        transition: opacity 0.4s ease;
+      }
+
+      .schedule:hover {
+        opacity: 0.8;
+      }
+
+      h6 {
+        margin: 0;
+        font-size: 14px;
+        font-family: $headings;
+        letter-spacing: 4px;
+        color: $grayish-blue;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .bgPattern {
+    height: 85%;
+  }
+  .navbar {
+    padding: 35px;
+    .nav-items {
+      z-index: 1;
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+      height: 250px;
+      width: 81%;
+      text-align: center;
+      padding: 20px;
+      margin: auto;
+      position: absolute;
+      top: 100px;
+      left: 0;
+      right: 0;
+      justify-self: center;
+      box-shadow: 0 0 10px rgba($color: $grayish-blue, $alpha: 0.5);
+      border-radius: 5px;
+      background-color: $white;
+
+      .dot {
+        display: none;
+      }
+
+      .line {
+        border-top: 1px solid rgba($color: $grayish-blue, $alpha: 0.3);
+      }
+
+      .nav-item {
+        font-family: $headings;
+        font-weight: 700;
+        font-size: 20px;
+      }
+
+      .login {
+        color: $grayish-blue;
+      }
+    }
+  }
+
+  .illustration {
+    overflow: hidden;
+    order: 1;
+    img {
+      width: 140%;
+      height: auto;
+    }
+  }
+
+  .offer {
+    order: 2;
+    margin-top: 80px;
+    padding-left: 30px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+
+    .small-title {
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+      font-family: $headings;
+
+      h6 {
+        margin: 0;
+        font-weight: 400;
+        letter-spacing: 3.5px;
+        color: $grayish-blue;
+      }
+
+      .badge {
+        font-size: 15px;
+        border-radius: 15px;
+        padding: 5px 10px;
+        color: $white;
+        background-color: $very-dark-blue;
+        margin-right: 15px;
+      }
+    }
+
+    .big-title {
+      margin-top: 15px;
+      h1 {
+        margin: 0;
+        font-family: $headings;
+        font-weight: 700;
+        color: $very-dark-blue;
+        font-size: 40px;
+      }
+    }
+
+    .text {
+      margin-top: 10px;
+      p {
+        margin: 0;
+        font-family: $body-font;
+        color: $dark-grayish-blue;
+        font-size: 17px;
+      }
+    }
+
+    .buttons {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+      align-items: center;
+
+      .schedule {
+        background-color: $red;
+        padding: 10px 25px;
+        border: none;
+        border-radius: 5px;
+        font-family: $headings;
+        font-weight: 700;
+        color: $white;
+        font-size: 14px;
+        letter-spacing: 1.3px;
+        transition: opacity 0.4s ease;
+      }
+
+      .schedule:hover {
+        opacity: 0.5;
+      }
+
+      h6 {
+        margin: 0;
+        font-size: 15px;
+        font-family: $headings;
+        letter-spacing: 2.5px;
+        color: $grayish-blue;
+      }
+    }
+  }
+}
