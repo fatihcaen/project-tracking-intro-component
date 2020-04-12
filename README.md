@@ -4,7 +4,14 @@ This is the project tracking intro component challenge by frontendmenter.io. Cod
 
 You can access the challenge from <a href="https://www.frontendmentor.io/challenges/project-tracking-intro-component-5d289097500fcb331a67d80e" target="_blank">this link</a>
 
-You can access the website from <a href="https://social-media-dashboard.imfast.io/" target="_blank">this link</a>
+You can access the website from <a href="https://project-tracking-intro-component.fatihcaen.now.sh/" target="_blank">this link</a>
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+
 
 # Used technologies
 
